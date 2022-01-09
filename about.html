@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Joren Fabré</title>
+    <link rel="icon" href="/icons/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Joren Fabré</h1>
+        <h2>Student Graduaat Programmeren (TM)</h2>
+        <nav class="navbar">
+            <div class="hamburger" onclick="toggleHamburger(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="hidden">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/projecten.html">Projecten</a></li>
+                <li><a href="/werkplekleren.html">Werkplekleren</a></li>
+                <li class="active"><a href="#">Over mij</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="links">
+        <figure>
+            <a href="https://www.thomasmore.be/opleidingen/graduaat/programmeren-dag-avondonderwijs/programmeren-dagonderwijs/antwerpen-0">
+                <img alt="Thomas More Logo" title="Klik hier om naar de pagina van mijn opleiding te gaan." src="/img/ThomasMore.png">
+            </a><figcaption>Mijn opleiding</figcaption>
+        </figure>
+        <figure>
+            <a href="https://github.com/JorenFabre">
+                <img alt="GitHub Logo" title="Klik hier om naar mijn GitHub profiel te gaan." src="/img/GitHub.png">
+            </a><figcaption>Mijn GitHub</figcaption>
+        </figure>
+        <figure>
+            <a href="https://www.linkedin.com/in/joren-fabre/">
+                <img alt="Linkedin Logo" title="Klik hier om naar mijn Linkedin profiel te gaan." src="/img/Linkedin.png">
+            </a><figcaption>Mijn LinkedIn</figcaption>
+        </figure>
+        <figure>
+            <a href="https://www.tjok.be/"> <!-- Note: WordPress gebruiken voor deze website was niet mijn keuze -->
+                <img alt="Tjok Hove Logo" title="Klik hier om naar de pagina van jeugdhuis Tjok Hove te gaan." src="/img/TjokHove.png">
+            </a><figcaption>Tjok Hove</figcaption>
+        </figure>
+    </aside>
+    <main>
+        <p>
+            Ik ben Joren. In mijn vrije tijd doe ik al een tijdje aan programmeren,
+            maar sinds dit jaar studeer ik het ook in het graduaat Programmeren bij <a href="https://thomasmore.be/">Thomas More</a>.<br>
+            Ik werk al een 6-tal jaar met Java, maar ik leer toch steeds dingen bij.
+            Het is al lang geleden dat ik zelf nog html heb gebruikt, ik edit vaker<br>
+            bestaande paginas (zowel de html code zelf als kleine aanpassingen via userscripts).
+        </p>
+        <p>
+            Ik heb eerst twee jaar van mijn middelbaar STEM gestudeerd bij <a href="https://www.st-gabriel.be/college/">Sint-Gabriël</a> in Boechout.<br>
+            Hierna heb ik 3 jaar Industriële Wetenschappen gestudeerd bij <a href="https://gtimortsel.be/">GTI</a> in Mortsel.<br>
+            Uiteindelijk ben ik door de achterstand die ik opliep vanwege Covid-17 voor
+            mijn laatste jaar Toegepaste ICT gaan studeren bij <a href="https://www.donboscohoboken.be/">Don Bosco</a> in Hoboken.
+        </p>
+        <p>
+            Je kan mij elke vrijdag en zaterdag avond vinden in het jeugdhuis <a href="https://www.tjok.be/">Tjok</a> in Hove. Daar ben ik wekelijks aan het tappen,<br>
+            bonnen aan het  verkopen bij evenementen, op een andere manier aan het helpen of gewoon gezellig aan het praten met vrienden.<br>
+            Ook beheer ik momenteel de website van het jeugdhuis als co-verantwoordelijke voor sociale media.
+        </p>
+        <p>
+            Voor meer over mij kan je altijd mijn <a href="/pdf/CV-Joren-Fabre.pdf">CV</a> bekijken.
+        </p>
+    </main>
+<footer>Made and maintained by Joren Fabré</footer>
+
+    <script>
+        function toggleHamburger(element) {
+            element.classList.toggle("change");
+            element.parentElement.lastElementChild.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>

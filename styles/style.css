@@ -145,6 +145,10 @@ main {
     margin: 0 10px;
 }
 
+main a {
+    color: #6A9499;
+}
+
 footer {
     grid-area: footer;
     margin: 0.5em 0;
@@ -175,7 +179,7 @@ footer {
 
 @media screen and (min-width: 430px) {
     header h2 {
-        margin: 10px 50px 0;
+        margin: 10px 75px 0;
     }
 
     nav.navbar ul li {
@@ -186,6 +190,10 @@ footer {
 @media screen and (min-width: 500px) {
     body {
         margin: 5px auto;
+    }
+
+    header h2 {
+        margin: 10px 0 0;
     }
 
     .hamburger, .hamburger.change {
@@ -237,6 +245,16 @@ footer {
     }
 }
 
+@media screen and (min-width: 740px) {
+    header h1, header h2 {
+        display: inline-flex;
+    }
+
+    header h2 {
+        margin-left: 30px;
+    }
+}
+
 @media screen and (min-width: 900px) {
     body {
         width: 855px;
@@ -246,12 +264,16 @@ footer {
 @media screen and (min-width: 1000px) {
     body {
         width: 950px;
-
+        grid-template-rows: 120px 135px 1fr 29px;
         grid-template-areas: 
             "links header"
             "links main"
             ". main"
             "footer footer";
+    }
+
+    header h2 {
+        margin-left: 75px;
     }
 }
 
@@ -268,5 +290,6 @@ footer {
 
     body {
         width: 1425px;
+        grid-template-rows: 138px 179.5px 1fr 35.5px;
     }
 }
