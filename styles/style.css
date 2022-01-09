@@ -114,27 +114,30 @@ aside.links {
     padding: 0;
     display: inline-flex;
 
-    padding: 15px 10px;
+    padding: 15px 0.5em;
 }
 
 aside.links figure {
-    margin: 0px;
-    height: 40px;
-    width: 40px;
+    margin: 0 auto;
+    height: 2em;
     flex-grow: 1;
-    text-align: center;
+    display: inline-flex;
 }
 
 aside.links a {
     color: #60AEBF;
+    margin: 0 auto;
 }
 
 aside.links img {
-    height: 40px;
+    height: 2em;
 }
 
-aside.links p {
+aside.links figcaption {
+    color: #03258C;
     display: none;
+    font-size: 0.75em;
+    margin: auto 5px;
 }
 
 main {
@@ -144,9 +147,10 @@ main {
 
 footer {
     grid-area: footer;
+    margin: 0.5em 0;
     padding: 3px 8px;
     border-top: 1px solid #559BAB;
-    font-size: small;
+    font-size: 0.5em;
     text-align: right;
 }
 
@@ -180,6 +184,10 @@ footer {
 }
 
 @media screen and (min-width: 500px) {
+    body {
+        margin: 5px auto;
+    }
+
     .hamburger, .hamburger.change {
         display: none;
     }
@@ -192,14 +200,73 @@ footer {
         padding: 0px;
     }
     
-    aside.links figure {
-        text-align: left;
+    aside.links a {
+        margin: 0;
     }
 
-    aside.links p {
-        color: #03258C;
+    aside.links figcaption {
         display: block;
-        font-size: 0.75em;
-        margin: 5px;
+    }
+}
+
+@media screen and (min-width: 690px) {
+    body {
+        width: 95%;
+    
+        grid-template-columns: 4em auto;
+        grid-template-areas: 
+            "header header"
+            "links main"
+            ". main"
+            "footer footer";
+    }
+
+    aside.links {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5px 0.5em 0 0;
+        padding: 0.25em;
+    }
+
+    aside.links figure {
+        margin: 0.5em;
+    }
+
+    aside.links figcaption {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        width: 855px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        width: 950px;
+
+        grid-template-areas: 
+            "links header"
+            "links main"
+            ". main"
+            "footer footer";
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        width: 1140px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    html {
+        font-size: 25px;
+    }
+
+    body {
+        width: 1425px;
     }
 }
