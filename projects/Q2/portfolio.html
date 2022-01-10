@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio (Responsive) - Joren Fabré</title>
+    <link rel="icon" href="/icons/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Joren Fabré</h1>
+        <h2>Student Graduaat Programmeren (TM)</h2>
+        <nav class="navbar">
+            <div class="hamburger" onclick="toggleHamburger(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="hidden">
+                <li><a href="/index.html">Home</a></li>
+                <li class="active"><a href="/projecten.html">Projecten</a></li>
+                <li><a href="/werkplekleren.html">Werkplekleren</a></li>
+                <li><a href="/about.html">Over mij</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="links">
+        <figure>
+            <a href="https://www.thomasmore.be/opleidingen/graduaat/programmeren-dag-avondonderwijs/programmeren-dagonderwijs/antwerpen-0">
+                <img alt="Thomas More Logo" title="Klik hier om naar de pagina van mijn opleiding te gaan." src="/img/ThomasMore.png">
+            </a><figcaption>Mijn opleiding</figcaption>
+        </figure>
+        <figure>
+            <a href="https://github.com/JorenFabre">
+                <img alt="GitHub Logo" title="Klik hier om naar mijn GitHub profiel te gaan." src="/img/GitHub.png">
+            </a><figcaption>Mijn GitHub</figcaption>
+        </figure>
+        <figure>
+            <a href="https://www.linkedin.com/in/joren-fabre/">
+                <img alt="Linkedin Logo" title="Klik hier om naar mijn Linkedin profiel te gaan." src="/img/Linkedin.png">
+            </a><figcaption>Mijn LinkedIn</figcaption>
+        </figure>
+        <figure>
+            <a href="https://www.tjok.be/"> <!-- Note: WordPress gebruiken voor deze website was niet mijn keuze -->
+                <img alt="Tjok Hove Logo" title="Klik hier om naar de pagina van jeugdhuis Tjok Hove te gaan." src="/img/TjokHove.png">
+            </a><figcaption>Tjok Hove</figcaption>
+        </figure>
+    </aside>
+    <main>
+        <p>
+            Ik maakte mbv. <a href="https://code.visualstudio.com/">Visual Studio Code</a> opnieuw deze portfolio website (deze keer ook responsive) voor het vak Responsive Design.<br>
+            Om te testen gebruikte ik <a href="https://www.google.com/chrome/">Google Chrome</a>. Ook maakte ik gebruik van <a href="https://git-scm.com/">Git</a> als versiecontrole.
+        </p>
+        <h4>Zo ging ik te werk:</h4>
+        <ol>
+            <li>De Homepagina maken voor 240px breedte.</li>
+            <li>De pagina breder maken tot iets er niet meer goed uit zag.</li>
+            <li>Herwerkte vanaf deze breedte de layout adhv. mediaqueries.</li>
+            <li>En opnieuw vanaf stap 2 tot ik bij 2000px breed zat.</li>
+            <li>Hierna maakte ik de andere pagina's door de Homepagina te kopieren en de 'main' aan te passen.</li>
+            <li>Ten slotte keek ik op elke pagina na of deze allemaal op elk formaat er goed uit zagen.</li>
+        </ol>
+        <p>
+            De volledige code van deze versie van de website vind je <a href="https://github.com/JorenFabre/jorenfabre.be">hier</a>.
+        </p>
+    </main>
+    <footer>Made and maintained by Joren Fabré</footer>
+
+    <script>
+        function toggleHamburger(element) {
+            element.classList.toggle("change");
+            element.parentElement.lastElementChild.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>

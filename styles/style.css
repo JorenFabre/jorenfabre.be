@@ -145,7 +145,7 @@ main {
     margin: 0 10px;
 }
 
-main a {
+main p a {
     color: #6A9499;
 }
 
@@ -175,6 +175,53 @@ main.contact section.submit {
 main .algemeen label {
     display: inline-block;
     width: 125px;
+}
+
+main > section {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #559BAB;
+}
+
+main > section:last-of-type {
+    border-bottom: none;
+}
+
+main > section .flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main article {
+    display: inline-block;
+    background-color: #407480;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 10px 20px;
+    width: 100%;
+}
+
+main article h3, main article p {
+    margin: 5px 0 0;
+}
+
+main article a {
+    color: #03258C;
+}
+
+main article figure {
+    margin: 0;
+}
+
+main article img {
+    width: 100%;
+}
+
+main h4 {
+    margin-bottom: 5px;
+}
+
+main ol {
+    margin-top: 5px;
 }
 
 footer {
@@ -247,6 +294,10 @@ footer {
     aside.links figcaption {
         display: block;
     }
+
+    main article {
+        width: 40%;
+    }
 }
 
 @media screen and (min-width: 690px) {
@@ -316,6 +367,10 @@ footer {
     main.contact section {
         margin-left: 50px;
     }
+
+    main article {
+        width: 25%
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -332,5 +387,9 @@ footer {
     body {
         width: 1425px;
         grid-template-rows: 138px calc(317.5px - 138px) 1fr 35.5px;
+    }
+
+    main article {
+        width: 20%;
     }
 }
