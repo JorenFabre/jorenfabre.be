@@ -4,8 +4,8 @@ icons/
 # Image folder
 img/
 
-# PDF folder
-pdf/
+# folder w/ referenced files
+files/
 
 # Me messing around in html
 other/
