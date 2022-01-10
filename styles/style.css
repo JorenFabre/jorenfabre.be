@@ -149,6 +149,34 @@ main a {
     color: #6A9499;
 }
 
+main.contact {
+    display: inline-flex;
+}
+
+main.contact section {
+    display: inline-table;
+    margin: auto;
+    width: 100%;
+}
+
+main.contact textarea {
+    width: 210px;
+    height: 75px;
+}
+
+main.contact input#news {
+    margin: 20px 0;
+}
+
+main.contact section.submit {
+    margin-bottom: 20px;
+}
+
+main .algemeen label {
+    display: inline-block;
+    width: 125px;
+}
+
 footer {
     grid-area: footer;
     margin: 0.5em 0;
@@ -184,6 +212,10 @@ footer {
 
     nav.navbar ul li {
         padding: 0 20px;
+    }
+
+    main.contact textarea {
+        width: 375px;
     }
 }
 
@@ -253,6 +285,11 @@ footer {
     header h2 {
         margin-left: 30px;
     }
+
+    main.contact section.algemeen, main.contact section.specifiek {
+        width: auto;
+        margin-right: 50px;
+    }
 }
 
 @media screen and (min-width: 900px) {
@@ -264,7 +301,7 @@ footer {
 @media screen and (min-width: 1000px) {
     body {
         width: 950px;
-        grid-template-rows: 120px 135px 1fr 29px;
+        grid-template-rows: 120px calc(255px - 120px) 1fr 29px;
         grid-template-areas: 
             "links header"
             "links main"
@@ -274,6 +311,10 @@ footer {
 
     header h2 {
         margin-left: 75px;
+    }
+
+    main.contact section {
+        margin-left: 50px;
     }
 }
 
@@ -290,6 +331,6 @@ footer {
 
     body {
         width: 1425px;
-        grid-template-rows: 138px 179.5px 1fr 35.5px;
+        grid-template-rows: 138px calc(317.5px - 138px) 1fr 35.5px;
     }
 }
